@@ -1,5 +1,6 @@
 import React from "react";
 import "./Details.css";
+import Button from "./Button";
 const Details = () => {
   return (
     <>
@@ -83,6 +84,10 @@ const Details = () => {
               </div>
             </form>
           </div>
+          
+        </div>
+        <div className="">
+          <Button label={"Add Details"}/>
         </div>
       </div>
     </>

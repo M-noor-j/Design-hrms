@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-
+import { IoPersonAddSharp } from "react-icons/io5";
 const Bottom = () => {
   return (
     <>
