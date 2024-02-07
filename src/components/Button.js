@@ -4,7 +4,7 @@ const Button = ({label}) => {
   return (
     <>
     <div className='container'>
-    <button type="button" class="btn btn-primary"><IoPersonAddSharp />{label}</button>
+    <button type="button" class="btn text-white" style={{background:"#033e8a"}}><IoPersonAddSharp className='mb-1 me-2'/>{label}</button>
  
     </div>
     </>

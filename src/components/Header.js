@@ -34,7 +34,7 @@ const Header = () => {
           </ul>
           <LuBellRing className="fs-3 me-4"/>
           <a class="navbar-brand " href="#">
-           Hello, Mr.Monish <img src="https://study.com/cimages/multimages/16/meeting-1019744_960_720.jpg" class="" style={{width:"80px", borderRadius:"200px"}}/>
+           Hello, Mr.Monish <img src="https://pics.craiyon.com/2023-06-23/2c83e3163d0348e9b88660a0a5d86459.webp" class="" style={{width:"60px", borderRadius:"200px"}}/>
           </a>
         </div>
       </div>
