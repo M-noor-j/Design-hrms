@@ -1,6 +1,8 @@
 import React from "react";
 import "./Details.css";
 import Button from "./Button";
+import { RxCross2 } from "react-icons/rx";
+import { SlCalender } from "react-icons/sl";
 const Details = () => {
   return (
     <>
@@ -8,11 +10,15 @@ const Details = () => {
         {/* first layout */}
         <div>
           <div className="fs-4">Skills</div>
-          <input
-            className=" py-2 rounded w-100 mt-2"
-            style={{ border: "none", background: "#F0F0F0" }}
-          />
+            <div className="py-2 rounded mt-2"  style={{ background: "#F0F0F0" }}>
+              <div className=" d-flex ">
+                <div className="bg-light shadow ms-3 rounded px-1 ">React js <RxCross2  className="ms-3"/> </div>
+                <div className="bg-light shadow ms-3 rounded px-1">Angular js <RxCross2 className="ms-3"/></div>
+              </div>
+            </div>
+        
         </div>
+
         {/* second section */}
         <div className="fs-4 mt-4">Prev Jobs</div>
         <div className="d-flex justify-content-between">
@@ -21,11 +27,24 @@ const Details = () => {
               <div class="user__details">
                 <div class="input__box">
                   <span class="details">Job Title</span>
-                  <input type="text" placeholder="Title" required />
+
+                  <input
+                    type="text"
+                    placeholder="Title"
+                    required
+                    style={{ background: "#F0F0F0" }}
+                    className="mt-2"
+                  />
                 </div>
                 <div class="input__box">
                   <span class="details">Company Name</span>
-                  <input type="text" placeholder="Name" required />
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    required
+                    style={{ background: "#F0F0F0" }}
+                    className="mt-2"
+                  />
                 </div>
                 <div class="input__box">
                   <span class="details">Company contact</span>
@@ -33,6 +52,8 @@ const Details = () => {
                     type="email"
                     placeholder="johnsmith@hotmail.com"
                     required
+                    style={{ background: "#F0F0F0" }}
+                    className="mt-2"
                   />
                 </div>
                 <div class="input__box">
@@ -42,11 +63,25 @@ const Details = () => {
                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     placeholder="Salary"
                     required
+                    style={{ background: "#F0F0F0" }}
+                    className="mt-2"
                   />
                 </div>
                 <div class="input__box">
                   <span class="details">Duration</span>
-                  <input type="text" placeholder="Duration" required />
+                  <div
+                    className="d-flex align-items-center pe-3 rounded mt-2"
+                    style={{ background: "#F0F0F0" }}
+                  >
+                    <input
+                      type="text"
+                      placeholder="Duration"
+                      required
+                      className=""
+                      style={{ background: "none" }}
+                    />
+                    <SlCalender />
+                  </div>
                 </div>
               </div>
             </form>
@@ -54,40 +89,70 @@ const Details = () => {
 
           {/* second column */}
           <div className="ms-3">
-            <form action="#">
-              <div class="user__details">
-                <div class="input__box">
-                  <span class="details">Training Name</span>
-                  <input type="text" placeholder="Name" required />
-                </div>
-                <div class="input__box">
-                  <span class="details">Institute Name</span>
-                  <input type="text" placeholder="Name" required />
-                </div>
-                <div class="input__box">
-                  <span class="details">Description</span>
-                  <input type="email" placeholder="Description" required />
-                </div>
-                <div class="input__box">
-                  <span class="details">Training Duration</span>
+            <form action="#" className="">
+              <div className="user__details">
+                <div className="input__box">
+                  <span className="details">Training Name</span>
                   <input
-                    type="tel"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    placeholder=""
+                    type="text"
+                    placeholder="Name"
                     required
+                    style={{ background: "#F0F0F0" }}
+                    className="mt-2"
                   />
                 </div>
-                <div class="input__box">
-                  <span class="details">Outcome Details</span>
-                  <input type="text" placeholder="Details" required />
+                <div className="input__box">
+                  <span className="details">Institute Name</span>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    required
+                    style={{ background: "#F0F0F0" }}
+                    className="mt-2"
+                  />
+                </div>
+                <div className="input__box">
+                  <span className="details">Description</span>
+                  <input
+                    type="email"
+                    placeholder="Description"
+                    required
+                    style={{ background: "#F0F0F0" }}
+                    className="mt-2"
+                  />
+                </div>
+                <div className="input__box">
+                  <span className="details">Training Duration</span>
+                  <div
+                    className="d-flex align-items-center pe-3 rounded mt-2"
+                    style={{ background: "#F0F0F0" }}
+                  >
+                    <input
+                      type="text"
+                      placeholder="Duration"
+                      required
+                      className=""
+                      style={{ background: "none" }}
+                    />
+                    <SlCalender />
+                  </div>
+                </div>
+                <div className="input__box">
+                  <span className="details">Outcome Details</span>
+                  <input
+                    type="text"
+                    placeholder="Details"
+                    required
+                    style={{ background: "#F0F0F0" }}
+                    className="mt-2"
+                  />
                 </div>
               </div>
             </form>
           </div>
-          
         </div>
-        <div className="">
-          <Button label={"Add Details"}/>
+        <div className="save-details mt-5">
+          <Button label={"Add Details"} />
         </div>
       </div>
     </>
