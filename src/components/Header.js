@@ -1,17 +1,20 @@
 import React from "react";
 import { LuBellRing } from "react-icons/lu";
+import { IoSearchOutline } from "react-icons/io5";
 const Header = () => {
   return (
     <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">
-        <form class="d-flex">
+        <div class="d-flex align-items-center w-50 py-2 rounded px-3" style={{background:"#F3F3F3"}}>
+        <IoSearchOutline />
           <input
-            class="form-control me-2"
+            class="ps-3"
             type="search"
             placeholder="Search"
             aria-label="Search"
+            style={{border:"none",background:"#F3F3F3"}}
           />
-        </form>
+        </div>
 
         <button
           class="navbar-toggler"

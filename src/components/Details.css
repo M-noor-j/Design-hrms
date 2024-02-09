@@ -10,7 +10,7 @@
 }
 /* inside the form user details */
 form .user__details .input__box {
-  width: calc(100% / 2 - 20px);
+  width: calc(100% / 2 - 5px);
   margin-bottom: 15px;
 }
 

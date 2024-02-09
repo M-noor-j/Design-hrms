@@ -6,21 +6,21 @@ import { SlCalender } from "react-icons/sl";
 const Details = () => {
   return (
     <>
-      <div className="container bg-light rounded shadow mt-4 py-5 px-5">
+      <div className="container   mt-4 py-5 px-5" style={{background:"#F8F8F8", borderRadius:"30px"}}>
         {/* first layout */}
         <div>
-          <div className="fs-4">Skills</div>
+          <div className="fs-4 fw-bold">Skills</div>
             <div className="py-2 rounded mt-2"  style={{ background: "#F0F0F0" }}>
               <div className=" d-flex ">
-                <div className="bg-light shadow ms-3 rounded px-1 ">React js <RxCross2  className="ms-3"/> </div>
-                <div className="bg-light shadow ms-3 rounded px-1">Angular js <RxCross2 className="ms-3"/></div>
+                <div className="  ms-3 rounded px-1 bg-light">React js <RxCross2  className="ms-3" /> </div>
+                <div className="bg-light  ms-3 rounded px-1">Angular js <RxCross2 className="ms-3"/></div>
               </div>
             </div>
         
         </div>
 
         {/* second section */}
-        <div className="fs-4 mt-4">Prev Jobs</div>
+        <div className="fs-4 mt-4 fw-bold">Prev Jobs</div>
         <div className="d-flex justify-content-between">
           <div>
             <form action="#">
@@ -88,7 +88,7 @@ const Details = () => {
           </div>
 
           {/* second column */}
-          <div className="ms-3">
+          <div className="ms-3 ">
             <form action="#" className="">
               <div className="user__details">
                 <div className="input__box">
